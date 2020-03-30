@@ -1,12 +1,11 @@
 
-#define ERROR dddddd
-#define WARNING #dddddd
-#define INFORMATION #000000
-#define DEBUG #000000
-#define SPONSOR #000000
-#define STACKOVERFLOW #000000
-#define DOCUMENTATION #000000
-#define DATEBG #000000
+#define ERROR           #C0392B
+#define WARNING         #F39C2D
+#define INFORMATION     #57D728
+#define DEBUG           #9B59B6
+#define SPONSOR         #42A185
+#define STACKOVERFLOW   #2980B9
+#define DOCUMENTATION   #EC87BF
 
 
 #include <iostream>
@@ -22,6 +21,9 @@ int len (char* word) {
 void bg_rgb (char* color) {
         int rgb;
         rgb = parse(color);
+        int r = 0;
+        int g = 0;
+        int b = 0;
         std::cout << "\033[48;2;" << r << ";" << g << ";" << b << "m";
 }
 
@@ -30,14 +32,14 @@ void fg_rgb (int r, int g, int b) {
 }
 
 bool check (char* hex) {
-        if (char[0] == '#') {
+        if (hex[0] == '#') {
                 return true;
         }
         else 
                 return false;
 }
 
-int parse (const char[] hex) {
+int parse (char* hex) {
         
         if(check(hex)) {
 
