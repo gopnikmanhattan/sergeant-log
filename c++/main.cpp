@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 
 int len(char string[]) {
 
@@ -14,12 +13,12 @@ int len(char string[]) {
 
 void bg_rgb(int r, int g, int b)
 {
-    printf("\u001b[48;2;" << r << ";" << g << ";" << b << "m");
+    std::cout << "\033[48;2;" << r << ";" << g << ";" << b << "m";
 }
 
 int main() {
 
-    bg_rgb(255, 255, 255);
+    std::cout << "\033[48;2;255;20;180mCIAO";
     return 0;
 }
 

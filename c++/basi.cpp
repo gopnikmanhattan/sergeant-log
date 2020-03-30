@@ -1,4 +1,5 @@
 #include "basi.h"
+#include <iostream>
 
 int len (char* word) {
 	int i = 0;
