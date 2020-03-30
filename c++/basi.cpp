@@ -10,9 +10,9 @@ int len (char* word) {
 }
 
 void bg_rgb (int r, int g, int b) {
-	std::cout << "\u001b[48;2;" << r << ";" << g << ";" << b << "m";
+	std::cout << "\033[48;2;" << r << ";" << g << ";" << b << "m";
 }
 
 void fg_rgb (int r, int g, int b) {
-	std::cout << "\u001b[38;2;" << r << ";" << g << ";" << b << "m";
+	std::cout << "\033[38;2;" << r << ";" << g << ";" << b << "m";
 }
