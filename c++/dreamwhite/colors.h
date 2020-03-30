@@ -1,0 +1,7 @@
+#define ERROR "#C0392B"
+#define WARNING "#F39C2D"
+#define INFORMATION "#57D728"
+#define DEBUG "#9B59B6"
+#define SPONSOR "#42A185"
+#define STACKOVERFLOW "#2980B9"
+#define DOCUMENTATION "#EC87BF"
