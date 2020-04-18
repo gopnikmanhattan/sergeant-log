@@ -135,20 +135,8 @@ class Logger():
             return Message
         else:
             raise Exception('Debug messages are not enabled! Please enable it inside Logger options.')
-#TODO: devo creare una classe Logger in cui come parametro iniziale devo passare un dizionario tipo:
 
-options = {
- 	"language": "italiano",
- 	"write": False,
-}
-
-log = Logger(options)
-print(log.warning("attenzione"))
-print(log.error("errore"))
-print(log.sponsor("sponsor message"))
-print(log.information("informazione"))
-
-# Language => [EN]/IT 
+# Language => [EN]/IT
 # Colors => [True]/False
 # Debug => [True]/False
 # Info => [True]/False
@@ -161,14 +149,17 @@ print(log.information("informazione"))
 #                       "error_log": "/path/to/error.log"}
 
 
-# The above ANSI escape code will set the text colour to bright green. The format is;
-#      \033 = Escape code, this is always the same
-#      1 = Style, 1 for normal.
-#      32 = Text colour, 32 for bright green.
-#      40m = Background colour, 40 is for black.
+options = {
+ 	"language": "italiano",
+ 	"write": False,
+}
 
+log = Logger(options)
+print(log.warning("attenzione"))
+print(log.error("errore"))
+print(log.sponsor("sponsor message"))
+print(log.information("informazione"))
 
-# For more infos check https://ozzmaker.com/add-colour-to-text-in-python/
 
 
 # INFORMATION WITH GREEN BG AND White FG
